@@ -1,4 +1,4 @@
-# 💰 Finanzas App Backend
+# 💰 FinNova App Backend
 
 Welcome to the backend repository for the **Finanzas App**. This is a robust RESTful API built with **Node.js** and **Express**, designed to manage financial planning simulations, client data, and complex payment structures. It uses **PostgreSQL** as the relational database, managed via **Sequelize ORM**.
 
