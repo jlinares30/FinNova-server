@@ -8,6 +8,7 @@ import clienteRoutes from './src/routes/cliente.routes.js';
 import planPagosRoutes from './src/routes/planPago.routes.js';
 import indicadoresRoutes from './src/routes/indicadores.routes.js';
 import cors from 'cors';
+import { setupSwagger } from "./src/config/swagger.js";
 import User from "./src/models/User.js";
 import PlanPago from "./src/models/PlanPago.js";
 import EntidadFinanciera from "./src/models/EntidadFinanciera.js";
@@ -58,6 +59,8 @@ async function start() {
     app.use('/api/entidad', entidadRoutes);
     app.use('/api/indicador', indicadoresRoutes);
     app.use('/api/plan-pagos', planPagosRoutes);
+
+    setupSwagger(app);
 
     app.listen(ENV.PORT, () => {
       console.log(`Server running on port ${ENV.PORT}`);
