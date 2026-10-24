@@ -7,6 +7,7 @@ import entidadRoutes from './src/routes/entidadFinanciera.routes.js';
 import clienteRoutes from './src/routes/cliente.routes.js';
 import planPagosRoutes from './src/routes/planPago.routes.js';
 import indicadoresRoutes from './src/routes/indicadores.routes.js';
+import healthRoutes from './src/routes/health.routes.js';
 import cors from 'cors';
 import { setupSwagger } from "./src/config/swagger.js";
 import User from "./src/models/User.js";
@@ -23,6 +24,10 @@ import Socioeconomico from "./src/models/Socioeconomico.js";
 const app = express();
 app.use(express.json());
 app.use(cors());
+
+// Health check accesible antes de la conexión a DB para respuesta inmediata
+app.use('/health', healthRoutes);
+app.use('/api/health', healthRoutes);
 
 async function start() {
   try {
