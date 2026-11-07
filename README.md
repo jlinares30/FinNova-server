@@ -1,8 +1,8 @@
-# 💰 FinNova App Backend
+#  FinNova App Backend
 
 Welcome to the backend repository for the **Finanzas App**. This is a robust RESTful API built with **Node.js** and **Express**, designed to manage financial planning simulations, client data, and complex payment structures. It uses **PostgreSQL** as the relational database, managed via **Sequelize ORM**.
 
-## 🚀 Features
+##  Features
 
 -   **User Authentication**: Secure registration and login system.
 -   **Client Management**: Handle client profiles and socioeconomic data.
@@ -12,7 +12,7 @@ Welcome to the backend repository for the **Finanzas App**. This is a robust RES
 -   **Cost Management**: Manage initial and periodic costs associated with locals/properties.
 -   **Catalog Management**: System catalogs and reference data.
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 -   **Runtime**: [Node.js](https://nodejs.org/)
 -   **Framework**: [Express.js](https://expressjs.com/)
@@ -21,7 +21,7 @@ Welcome to the backend repository for the **Finanzas App**. This is a robust RES
 -   **Authentication**: JSON Web Tokens (JWT) & bcrypt (implied)
 -   **Language**: JavaScript (ES Modules)
 
-## 🧮 Financial Algorithms
+##  Financial Algorithms
 
 The backend core implements rigorous financial logic for payment plan simulations. Below are the main algorithms detailed:
 
@@ -55,7 +55,7 @@ The algorithm integrates operating costs into each quota:
 -   **All-Risk Insurance**: Fixed or variable amount depending on the property value.
 -   **Administrative Expenses and Postage**: Fixed monthly charges.
 
-## 📂 Project Structure
+##  Project Structure
 
 ```bash
 src/
@@ -68,7 +68,7 @@ src/
 index.js            # Entry point of the application
 ```
 
-## ⚡ Getting Started
+##  Getting Started
 
 Follow these steps to set up the project locally.
 
